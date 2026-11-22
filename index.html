@@ -17,11 +17,19 @@
     <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#000000" />
-    <script type="module" crossorigin src="/assets/index-jT8Go72h.js"></script>
+    <script type="module" crossorigin src="/assets/index-DS0KN2K0.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DoVZZl78.css">
   </head>
   <body>
     <div id="stage"></div>
+    <script>
+      // the country data starts downloading now, alongside the app's code, not after it has run;
+      // the app takes this response (domain/world.ts). Not a <link rel=preload>: Safari doesn't
+      // match it to the app's fetch and downloads the file twice
+      try {
+        window.__prefetch = { 'data/countries-50m.un.json': fetch('/data/countries-50m.un.json') };
+      } catch (e) {}
+    </script>
     <div id="status" aria-live="polite"></div>
     <div id="tip" role="tooltip"></div>
     <div id="ui"></div>

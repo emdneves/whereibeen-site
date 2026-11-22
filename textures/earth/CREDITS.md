@@ -5,8 +5,8 @@ Derived from NASA imagery (public domain), via the example assets of the
 
 | File | Source |
 |---|---|
-| day.jpg | NASA Blue Marble Next Generation (with bathymetry) |
+| day.webp | NASA Blue Marble Next Generation (with bathymetry) |
 | night.jpg | NASA Earth at Night / Black Marble |
-| topology.png | NASA / GEBCO elevation (bump map) |
+| topology.webp | NASA / GEBCO elevation (bump map) |
 | water.png | Land/water mask (white = water) |
 | clouds.png | NASA Blue Marble clouds (alpha = cloud cover) |
